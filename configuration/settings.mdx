@@ -1,0 +1,69 @@
+---
+title: Settings
+description: Customize env to your preferences
+---
+
+# Settings
+
+Access settings with **⌘ + ,** or from the menu bar.
+
+## General
+
+| Setting | Description | Default |
+|---------|-------------|---------|
+| Default Provider | Provider used for new chats | Last used |
+| Default Model | Model used for new chats | Provider default |
+| Theme | Light, Dark, or System | System |
+| Send on Enter | Send message with Enter key | Enabled |
+
+## Chat
+
+| Setting | Description | Default |
+|---------|-------------|---------|
+| Stream Responses | Show responses as they generate | Enabled |
+| Save History | Persist chat history locally | Enabled |
+| History Location | Where to store chat history | `~/Library/Application Support/env` |
+
+## Appearance
+
+| Setting | Description | Default |
+|---------|-------------|---------|
+| Font Size | Chat text size | Medium |
+| Code Theme | Syntax highlighting theme | GitHub Dark |
+| Compact Mode | Reduce spacing in chat | Disabled |
+
+## Keyboard Shortcuts
+
+| Setting | Description | Default |
+|---------|-------------|---------|
+| Global Hotkey | Open env from anywhere | ⌥ + Space |
+| Quick Switch | Enable ⌘+1-4 provider switching | Enabled |
+
+<Tip>
+  Set a global hotkey to quickly summon env from any app.
+</Tip>
+
+## Data & Privacy
+
+| Setting | Description | Default |
+|---------|-------------|---------|
+| Analytics | Send anonymous usage data | Disabled |
+| Crash Reports | Send crash reports | Enabled |
+
+<Note>
+  All chat data stays on your machine. We don't have access to your conversations or API keys.
+</Note>
+
+## Reset
+
+To reset all settings to defaults:
+
+1. Open Settings
+2. Scroll to the bottom
+3. Click **Reset to Defaults**
+
+To completely reset env (including chat history):
+
+```bash
+rm -rf ~/Library/Application\ Support/env
+```

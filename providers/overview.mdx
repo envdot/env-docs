@@ -1,0 +1,56 @@
+---
+title: Providers Overview
+description: Supported AI providers in env
+---
+
+# Providers
+
+env supports multiple AI providers, letting you choose the best model for each task.
+
+## Supported Providers
+
+<CardGroup cols={2}>
+  <Card title="Anthropic" icon="message" href="/providers/claude">
+    Claude 3.5 Sonnet, Claude 3 Opus, Claude 3 Haiku
+  </Card>
+  <Card title="OpenAI" icon="robot" href="/providers/openai">
+    GPT-4o, GPT-4 Turbo, GPT-3.5 Turbo
+  </Card>
+  <Card title="Google" icon="google" href="/providers/gemini">
+    Gemini 1.5 Pro, Gemini 1.5 Flash
+  </Card>
+  <Card title="xAI" icon="bolt" href="/providers/grok">
+    Grok-2, Grok-2 Mini
+  </Card>
+</CardGroup>
+
+## Comparison
+
+| Provider | Best For | Context Window | Speed |
+|----------|----------|----------------|-------|
+| Claude 3.5 Sonnet | Balanced performance | 200K | Fast |
+| Claude 3 Opus | Complex reasoning | 200K | Moderate |
+| GPT-4o | Multimodal tasks | 128K | Fast |
+| Gemini 1.5 Pro | Long context | 1M | Moderate |
+| Grok-2 | Real-time information | 128K | Fast |
+
+## Switching Providers
+
+You can switch providers at any time:
+
+- **In chat**: Use the model dropdown in the top bar
+- **Keyboard**: ⌘ + 1 (Claude), ⌘ + 2 (GPT), ⌘ + 3 (Gemini), ⌘ + 4 (Grok)
+- **Mid-conversation**: Switch models and continue the same chat
+
+<Tip>
+  Different providers have different strengths. Try switching models if you're not getting the results you want.
+</Tip>
+
+## Pricing
+
+env doesn't charge for usage — you pay the providers directly via their APIs. Check each provider's pricing:
+
+- [Anthropic Pricing](https://anthropic.com/pricing)
+- [OpenAI Pricing](https://openai.com/pricing)
+- [Google AI Pricing](https://ai.google.dev/pricing)
+- [xAI Pricing](https://x.ai/api)

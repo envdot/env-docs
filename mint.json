@@ -1,0 +1,76 @@
+{
+  "$schema": "https://mintlify.com/schema.json",
+  "name": "env",
+  "logo": {
+    "dark": "/logo/dark.svg",
+    "light": "/logo/light.svg"
+  },
+  "favicon": "/favicon.svg",
+  "colors": {
+    "primary": "#22c55e",
+    "light": "#4ade80",
+    "dark": "#16a34a",
+    "anchors": {
+      "from": "#22c55e",
+      "to": "#16a34a"
+    }
+  },
+  "topbarLinks": [
+    {
+      "name": "Download",
+      "url": "https://dotenv.id"
+    }
+  ],
+  "topbarCtaButton": {
+    "name": "GitHub",
+    "url": "https://github.com/yourusername/env"
+  },
+  "tabs": [
+    {
+      "name": "Documentation",
+      "url": "/"
+    }
+  ],
+  "anchors": [
+    {
+      "name": "Changelog",
+      "icon": "list",
+      "url": "https://dotenv.id/changelog"
+    },
+    {
+      "name": "GitHub",
+      "icon": "github",
+      "url": "https://github.com/yourusername/env"
+    }
+  ],
+  "navigation": [
+    {
+      "group": "Get Started",
+      "pages": [
+        "introduction",
+        "installation",
+        "quickstart"
+      ]
+    },
+    {
+      "group": "Configuration",
+      "pages": [
+        "configuration/api-keys",
+        "configuration/settings"
+      ]
+    },
+    {
+      "group": "Providers",
+      "pages": [
+        "providers/overview",
+        "providers/claude",
+        "providers/openai",
+        "providers/gemini",
+        "providers/grok"
+      ]
+    }
+  ],
+  "footerSocials": {
+    "github": "https://github.com/yourusername/env"
+  }
+}

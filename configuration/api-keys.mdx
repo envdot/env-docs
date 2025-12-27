@@ -1,0 +1,77 @@
+---
+title: API Keys
+description: Configure your AI provider API keys
+---
+
+# API Keys
+
+env connects directly to AI provider APIs. You'll need to add your own API keys to use each provider.
+
+## Adding API Keys
+
+1. Open **Settings** (⌘ + ,)
+2. Navigate to **API Keys**
+3. Enter your key for each provider you want to use
+4. Click **Save**
+
+<Note>
+  API keys are stored securely in your macOS Keychain. They never leave your device.
+</Note>
+
+## Getting API Keys
+
+### Anthropic (Claude)
+
+1. Go to [console.anthropic.com](https://console.anthropic.com)
+2. Sign up or log in
+3. Navigate to **API Keys**
+4. Click **Create Key**
+5. Copy the key (starts with `sk-ant-`)
+
+### OpenAI (GPT-4)
+
+1. Go to [platform.openai.com](https://platform.openai.com)
+2. Sign up or log in
+3. Navigate to **API Keys**
+4. Click **Create new secret key**
+5. Copy the key (starts with `sk-`)
+
+### Google (Gemini)
+
+1. Go to [aistudio.google.com](https://aistudio.google.com/app/apikey)
+2. Sign in with your Google account
+3. Click **Create API Key**
+4. Copy the key
+
+### xAI (Grok)
+
+1. Go to [console.x.ai](https://console.x.ai)
+2. Sign up or log in
+3. Navigate to **API Keys**
+4. Create a new key
+5. Copy the key
+
+## Security
+
+<Warning>
+  Never share your API keys. Treat them like passwords.
+</Warning>
+
+env takes security seriously:
+
+- **Local Storage**: Keys are stored in macOS Keychain, encrypted at rest
+- **No Telemetry**: We don't collect or transmit your keys
+- **Direct Connection**: API calls go directly to providers, not through our servers
+
+## Troubleshooting
+
+### "Invalid API Key" Error
+
+- Double-check for extra spaces when pasting
+- Ensure the key hasn't been revoked in your provider dashboard
+- Verify you have billing set up (some providers require it)
+
+### "Rate Limited" Error
+
+- You've hit your provider's rate limit
+- Wait a few minutes or upgrade your plan with the provider
